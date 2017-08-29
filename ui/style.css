@@ -1,11 +1,11 @@
 body {
     font-family: ariel;
     background-color: lightgrey;
-    margin-top: 60px;
+    margin-top: 75px;
 }
 
 .center {
-    text-align:left;
+    text-align:center;
 }
 
 .text-big {
