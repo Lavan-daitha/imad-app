@@ -20,3 +20,26 @@ body {
     height: 200px;
 }
 
+  .container
+    {
+        margin:0 auto;
+        color:grey;
+        font-family:sans-serif;
+        padding-left:200px;
+        padding-top:20px;
+        padding-right:200px;
+    }
+    .home
+     {
+        margin:0 auto;
+        color:red;
+        font-family:sans-serif;
+        padding-left:200px;
+        padding-top:20px;
+        padding-right:200px;
+     }
+         .time
+         {
+             padding-left:200px;
+             padding-top:20px;
+         }
