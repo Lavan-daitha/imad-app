@@ -1,7 +1,7 @@
 console.log('Loaded!');
 var button=document.getElementById('counter');
-var counter=0;
-button.onclick=function(){
+//var counter=0;
+button.onclick = function(){
     
    //createrequest to the counter endpont
    
@@ -11,9 +11,9 @@ button.onclick=function(){
     
    request.onreadystatechange=function(){
      
-     if(request.readystate===XMLHttpRequest.DONE) 
+     if(request.readystate === XMLHttpRequest.DONE) 
      {
-         if(request.status===200)
+         if(request.status === 200)
          {
              var counter=request.responseText;
              var span=document.getElementById('count');
@@ -23,8 +23,8 @@ button.onclick=function(){
        
    };
       //make a request to the server.
-      request.open('GET','http://daithalavan444.imad.hasura-app.io',true);
-      request.send(Null);
+      request.open('GET','http://daithalavan444.imad.hasura-app.io',true );
+      request.send( null ) ;
       
     
 };
