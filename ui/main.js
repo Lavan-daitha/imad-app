@@ -23,7 +23,7 @@ button.onclick = function(){
        
    };
       //make a request to the server.
-      request.open('GET','http://daithalavan444.imad.hasura-app.io',true );
+      request.open('GET','http://daithalavan444.imad.hasura-app.io/counter',true );
       request.send( null ) ;
       
     
