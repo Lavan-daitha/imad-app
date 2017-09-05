@@ -1,6 +1,6 @@
 console.log('Loaded!');
 var button=document.getElementById('counter');
-var counter=0;
+//var counter=0;
 button.onclick = function(){
     
    //create request to the counter endpont
@@ -16,7 +16,7 @@ button.onclick = function(){
          if(request.status == 200)
          {
              var counter=request.responseText;
-             counter=counter+1;
+            // counter=counter+1;
              var span=document.getElementById('count');
              span.innerHTML=counter.toString();
          }
