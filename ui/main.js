@@ -32,7 +32,7 @@ button.onclick = function(){
 
 
 //submit names
-var nameinput = document.getElementById('names');
+var nameinput = document.getElementById('name');
 var name = nameinput.vaue;
 var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
