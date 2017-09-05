@@ -3,7 +3,7 @@ var button=document.getElementById('counter');
 //var counter=0;
 button.onclick = function(){
     
-   //createrequest to the counter endpont
+   //create request to the counter endpont
    
    var request = new XMLHttpRequest();
    
