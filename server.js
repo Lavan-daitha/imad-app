@@ -1,6 +1,19 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var Pool= require('pg').Pool;
+
+var config = {
+  user : 'daithalavan444' ,
+  database:'daithalavan444',
+  host:'5432',
+  password : process.env.DB_PASSWORD
+  
+  
+    
+};
+ 
+ var Pool = new Pool(config);
 
 var app = express();
 app.use(morgan('combined'));
@@ -16,6 +29,27 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+
+app.get('/test-db', function(req,res){
+    
+    //make a request
+    //return a response with the result
+    
+    pool.query('SELECT * from test',function(err,res){
+     
+     if(err)
+     { 
+       res.status('500').send(err.toString());
+       
+     }else{
+         res.send(JSON.stringify(result));
+     }
+     
+     
+    });
+    
+});
+
 
 var counter=0;
 app.get('/counter',function(req,res){
