@@ -42,7 +42,7 @@ submit.onclick = function(){
   
   var namess = ['name1','name2','name3'];
   var list = ' ';
-  for(var i=0; i<=names.length();i++)
+  for(var i=0; i<=names.length;i++)
   {
       list = '<li>' +namess[i] +'</li>' ; 
   }
