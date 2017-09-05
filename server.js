@@ -35,7 +35,7 @@ app.get('/test-db', function(req,res){
     //make a request
     //return a response with the result
     
-    pool.query('SELECT * from test',function(err,res){
+    pool.query('SELECT * from test;',function(err,res){
      
      if(err)
      { 
