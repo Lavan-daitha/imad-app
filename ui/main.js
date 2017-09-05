@@ -29,3 +29,27 @@ button.onclick = function(){
       
     
 };
+
+
+//submit names
+var nameinput = document.getElementById('names');
+var name = nameinput.vaue;
+var submit = document.getElementById('submit_btn');
+submit.onclick = function(){
+  //make a request to the server and send the name
+  
+  //capture a list of names and render as html
+  
+  var names = ['name1','name2','name3'];
+  var list = ' ';
+  for(var i=0; i<names.length;i++)
+  {
+      list == '<li>' +names[i] +'</li>' ; 
+  }
+var ul = document.getElementById('namelist');
+ul.innerHTML = list;
+ 
+ 
+ 
+};
+ 
